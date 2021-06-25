@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Dell Laptop",
+    "price": "0,009.99"
+  },
+  {
+    "id": 2,
+    "name": "MacBook",
+    "price": "0,000,009.99"
+  },
+  {
+    "id": 3,
+    "name": "HP Laptop",
+    "price": "AVAILABLE SOON"
+  },
+  {
+    "id": 4,
+    "name": "IMac",
+    "price": "-0,009.99"
+  },
+  {
+    "id": 5,
+    "name": "Compaq",
+    "price": "-0,000,009.99"
+  },
+  {
+    "id": 6
+  }
+]

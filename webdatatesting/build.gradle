@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.tgs_ct'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.3.+'
+    implementation files('./src/main/resources/calibrator4test-1.5.0.jar')
+    implementation files('./src/main/resources/indentmanager-1.0.9.jar')
+    implementation 'ch.qos.logback:logback-core:1.2.+'
+    implementation 'ch.qos.logback:logback-classic:1.2.+'
+    implementation 'org.slf4j:slf4j-api:1.7.+'
+}
+
+test {
+    useTestNG()
+}

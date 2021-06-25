@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Dell Laptop"
+  },
+  {
+    "id": 2,
+    "name": "MacBook"
+  },
+  {
+    "id": 3,
+    "name": "HP Laptop"
+  },
+  {
+    "id": 5,
+    "name": "Compaq"
+  },
+  {
+    "id": 6
+  }
+]

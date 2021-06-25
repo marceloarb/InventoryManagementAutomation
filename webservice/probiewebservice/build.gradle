@@ -1,0 +1,31 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.5.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+group = 'org.tgs_ct.probies'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.5.RELEASE'
+	testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.5.RELEASE'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		testImplementation group: 'org.testng', name: 'testng', version: '7.3.0'
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	implementation 'com.google.code.gson:gson:2.8.6'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'mysql:mysql-connector-java'
+
+}
+
+test {
+	useTestNG()
+}
